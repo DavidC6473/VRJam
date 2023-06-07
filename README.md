@@ -9,7 +9,6 @@ VRJam is a web application that enables users to interact in a virtual reality (
 - [Technologies Used](#technologies-used)
 - [Running the Application](#running-the-application)
 - [Technical Challenges](#technical-challenges)
-- [Conclusion](#conclusion)
 
 ## Introduction
 
@@ -67,7 +66,3 @@ The development of VRJam presented several technical challenges:
 1. **Achieving Low Latency**: VRJam aimed to provide a seamless real-time music collaboration experience. However, achieving low enough latency was a challenge due to network limitations. Despite employing latency reduction techniques such as WebRTC for peer-to-peer communication and server-side audio processing with Tone.js, the target latency was not fully achieved. Extensive experimentation and optimization were necessary to strike the optimal balance between latency reduction and audio quality.
 
 2. **Network Stability and Disconnections**: Network instability led to intermittent disconnections between users. To address this issue, modifications were made to the Socket.io connection protocol, and a custom client-side reconnection algorithm was developed. These enhancements ensured that users were automatically reconnected to the server in the event of a disconnection, allowing for uninterrupted collaboration.
-
-## Conclusion
-
-VRJam is an innovative web application that enables real-time music collaboration in a virtual reality environment. By leveraging technologies such as TypeScript, Node.js, Express.js, Socket.io, WebRTC, Tone.js, and Three.js, VRJam provides a platform for musicians to connect, perform, and create music together, regardless of their physical locations. Despite facing challenges related to latency and network stability, the resulting application demonstrates the potential of modern web technologies to foster remote collaboration and unleash creativity in the realm of music.
